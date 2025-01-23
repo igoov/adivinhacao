@@ -15,8 +15,6 @@ printf ("Qual eh o seu chute? ");
 scanf("%d", &chute); //%d armazenar e ler um numero inteiro
 printf("Seu chute foi %d \n", chute);
 
-//
-
 if (chute == numerosecreto) {
     printf ("Parabens! Voce acertou!\n");
 } else {
