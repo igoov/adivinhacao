@@ -4,19 +4,12 @@
 int main()
 {
 
-    printf("************************************\n");
+    printf("***********************************\n");
     printf("* Bem-vindo ao Jogo de Advinhacao *\n");
-    printf("************************************\n");
+    printf("***********************************\n");
 
     int numerosecreto = 42;
     int chute; // int = numeiro inteiro
-    int ganhou = 0;
-    int tentativas = 1;
-
-    while (!ganhou) {
-        
-    }
-    
 
 // variavel i com o numero 1, condição de parada i <= 3, i++
 //soma 1 a variavel = 0,1,2 e quando for igual a 3, a condicao sera falsa e o loop parara.
