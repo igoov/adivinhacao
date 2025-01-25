@@ -10,3 +10,8 @@
  • A fazer loops contados como for;
  • A fazer loops com while;
  • A criar constantesusando #define.
+
+ *** float: Menos preciso e ocupa menos espaço.
+    double: Mais preciso e ocupa mais espaço. ***
+
+    

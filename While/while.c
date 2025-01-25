@@ -13,11 +13,17 @@ int main()
     int ganhou = 0;
     int tentativas = 1;
 
-    while (1) {
+    double pontos = 1000; //double = guardar números que têm vírgula (ou ponto) decimal mais preciso
 
+    printf("Voce fez %d pontos", pontos);
+
+    while (1) {
 
     printf("Qual eh o seu chute?", tentativas);
     scanf("%d", &chute);
+
+    double pontosperdidos = (chute - numerosecreto) / 2.0; //garantir que a divisão seja feita como divisão de números reais (com vírgula)
+    pontos = pontos - pontosperdidos;
 
     if (chute < 0 ) {
         printf("Voce nao pode chutar numeros negativos\n"); 
@@ -45,5 +51,6 @@ int main()
         tentativas++; //somar as tentavas
     }
 
+printf("Voce fez %.2f pontos\n", pontos); //imprimiraquelenúmero com apenas 2 casas decimais
 printf("Obrigado por jogar!\n");
 }
