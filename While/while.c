@@ -22,7 +22,7 @@ int main()
     printf("Qual eh o seu chute?", tentativas);
     scanf("%d", &chute);
 
-    double pontosperdidos = (chute - numerosecreto) / 2.0; //garantir que a divisão seja feita como divisão de números reais (com vírgula)
+    double pontosperdidos = (double)(chute - numerosecreto) /(double)2.0; //garantir que a divisão seja feita como divisão de números reais (com vírgula)
     pontos = pontos - pontosperdidos;
 
     if (chute < 0 ) {
@@ -32,7 +32,7 @@ int main()
     
     printf("Seu %do. chute foi %d\n",tentativas, chute);
 
-    int acertou = chute == numerosecreto;
+    int acertou = chute == numerosecreto; // == atribuição
     int maior = chute > numerosecreto;
     int menor = chute < numerosecreto;
 
